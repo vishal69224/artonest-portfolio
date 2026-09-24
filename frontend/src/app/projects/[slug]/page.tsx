@@ -87,7 +87,17 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       <Reveal delay={0.15}>
         <div className="mt-14 flex flex-wrap gap-3">
-          <Button href="/contact">BOOK_CALL</Button>
+          {project.liveUrl ? (
+            <Button href={project.liveUrl}>LIVE_DEMO</Button>
+          ) : null}
+          {project.githubUrl ? (
+            <Button href={project.githubUrl} variant="outline">
+              GITHUB
+            </Button>
+          ) : null}
+          <Button href="/contact" variant={project.liveUrl ? "ghost" : "primary"}>
+            BOOK_CALL
+          </Button>
           <Button href="/projects" variant="outline">
             ALL_PROJECTS
           </Button>

@@ -14,8 +14,8 @@ export function WorkShowcase() {
                 Selected design work
               </h2>
               <p className="mt-4 max-w-xl text-base text-[var(--muted)]">
-                SaaS, fintech, logistics, healthcare, and product interfaces from
-                the Artonest studio portfolio.
+                Live product demos — Seller Hub, Video AI, AI Builder, and 3D
+                Laptop — with GitHub source linked on each case.
               </p>
             </div>
             <Button href="/projects" variant="outline">

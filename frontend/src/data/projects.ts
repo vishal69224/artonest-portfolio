@@ -11,147 +11,110 @@ export type Project = {
   stack: string[];
   accent: string;
   image: string;
+  liveUrl?: string;
+  githubUrl?: string;
 };
 
-/** Featured work inspired by Artonest Design Studio portfolio. */
+/** Featured product work — live demos linked from GitHub + Vercel. */
 export const projects: Project[] = [
   {
-    slug: "solarex",
+    slug: "seller-ai",
     number: "01",
-    title: "Solarex",
-    shortName: "solarex",
-    dateLabel: "SaaS · Energy · Dashboard",
+    title: "Seller Hub",
+    shortName: "seller-ai",
+    dateLabel: "SaaS · Commerce · AI",
     summary:
-      "Smart solar energy dashboard UI/UX — clear metrics, monitoring flows, and a product-ready interface.",
+      "AI-ready seller dashboard — products, orders, analytics, and video tools in one commerce hub.",
     overview:
-      "A SaaS dashboard experience for solar energy monitoring, designed to keep complex energy data readable and actionable.",
+      "Seller Hub is a portfolio demo dashboard for marketplace sellers: catalog, orders, marketplace views, and an AI video generator path wired for public hosting.",
     challenge:
-      "Turning dense energy and device data into a calm, scannable dashboard for operators and customers.",
+      "Shipping a credible seller ops UI that works as a public demo without exposing auth friction or private seller data.",
     highlights: [
-      "Energy dashboard information architecture",
-      "Clear KPI and monitoring layouts",
-      "SaaS-ready UI system",
-      "Mobile-aware responsive structure",
+      "Products, orders, and analytics surfaces",
+      "Demo-friendly auth and sample data",
+      "AI video generator module",
+      "Vite frontend + FastAPI backend monorepo",
     ],
-    stack: ["UI/UX", "SaaS", "Dashboard"],
-    accent: "#a78bfa",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    slug: "fintech-unicron",
-    number: "02",
-    title: "Fintech Unicron",
-    shortName: "fintech-unicron",
-    dateLabel: "Fintech · Crypto · Product",
-    summary:
-      "Digital finance and crypto product UI — modern trading and money flows with a clean visual system.",
-    overview:
-      "A fintech product direction focused on trust, clarity, and fast decision-making across finance and crypto surfaces.",
-    challenge:
-      "Balancing dense financial data with a premium, approachable interface.",
-    highlights: [
-      "Finance and crypto UI patterns",
-      "Trust-focused visual hierarchy",
-      "Trading and account flows",
-      "Consistent product design language",
-    ],
-    stack: ["UI/UX", "Fintech", "Web App"],
+    stack: ["React", "Vite", "TypeScript", "FastAPI"],
     accent: "#38bdf8",
     image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
+    liveUrl: "https://seller-ai.vercel.app",
+    githubUrl: "https://github.com/vishal69224/seller-ai",
   },
   {
-    slug: "quickship",
-    number: "03",
-    title: "Quickship",
-    shortName: "quickship",
-    dateLabel: "Logistics · Tracking · App",
+    slug: "video-ai",
+    number: "02",
+    title: "Video AI",
+    shortName: "video-ai",
+    dateLabel: "AI · Video · Product",
     summary:
-      "Shipping and cargo tracking interface that simplifies logistics for users and operators.",
+      "AI video generation product UI — model selection, uploads, and generation flows with a polished frontend.",
     overview:
-      "A logistics product UI designed around tracking clarity, status updates, and smooth shipping workflows.",
+      "Video AI is a React frontend for prompting models, managing uploads, and tracking generation status against a Python API.",
     challenge:
-      "Making multi-step shipping and tracking feel simple without hiding important status detail.",
+      "Making complex model pricing and generation settings feel clear while keeping the UI production-ready for demos.",
     highlights: [
-      "Shipment status storytelling",
-      "Tracking map and list patterns",
-      "Operator-friendly dashboards",
-      "Mobile-first delivery UX",
+      "Model picker with pricing context",
+      "Upload and generation UX",
+      "Motion-led product polish",
+      "Vite + FastAPI architecture",
     ],
-    stack: ["UI/UX", "Logistics", "Mobile"],
+    stack: ["React", "Vite", "Framer Motion", "Python"],
+    accent: "#a78bfa",
+    image:
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80",
+    liveUrl: "https://video-ai-ten-kohl.vercel.app",
+    githubUrl: "https://github.com/vishal69224/video-ai",
+  },
+  {
+    slug: "ai-builder",
+    number: "03",
+    title: "AI Builder",
+    shortName: "ai-builder",
+    dateLabel: "AI · No-code · Web",
+    summary:
+      "AI website builder — edit, preview, and ship product surfaces with an OpenRouter-ready studio UI.",
+    overview:
+      "AI Builder is a monorepo website builder with a Vite studio frontend and FastAPI backend for generating and refining web projects.",
+    challenge:
+      "Keeping AI-assisted edits controllable and demoworthy while spanning web UI, API, and ML tooling in one repo.",
+    highlights: [
+      "Monaco-powered editing experience",
+      "Web + API monorepo",
+      "Portfolio demo polish and smarter edits",
+      "OpenRouter-ready generation path",
+    ],
+    stack: ["React", "Vite", "FastAPI", "AI"],
     accent: "#f472b6",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80",
+    liveUrl: "https://ai-builder-web-wheat.vercel.app",
+    githubUrl: "https://github.com/vishal69224/ai-builder",
   },
   {
-    slug: "blissful",
+    slug: "3d-laptop",
     number: "04",
-    title: "BlissFul",
-    shortName: "blissful",
-    dateLabel: "Healthcare · Mental Health",
+    title: "3D Laptop",
+    shortName: "3d-laptop",
+    dateLabel: "3D · Portfolio · Desktop",
     summary:
-      "Mental health app UX/UI case study — calm interfaces for support, habits, and daily check-ins.",
+      "Interactive 3D macOS-style laptop portfolio simulator built with Panda3D — desktop experience, not a web deploy.",
     overview:
-      "A wellness product experience designed for clarity, emotional safety, and approachable daily use.",
+      "A desktop 3D portfolio builder that boots into a simulated laptop UI with dock, windows, lighting, and portfolio surfaces for demos and showcases.",
     challenge:
-      "Designing a sensitive healthcare product that feels supportive, not clinical or overwhelming.",
+      "Building a convincing interactive 3D desktop metaphor with stable rendering, UI chrome, and portfolio content windows.",
     highlights: [
-      "Calm visual system",
-      "Habit and check-in flows",
-      "Accessible interaction design",
-      "Mobile-first wellness UX",
+      "Panda3D interactive laptop scene",
+      "Boot screen, dock, and window manager",
+      "Portfolio windows and desktop widgets",
+      "Open-source on GitHub (desktop runtime)",
     ],
-    stack: ["UI/UX", "Healthcare", "Mobile"],
-    accent: "#fb7185",
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    slug: "finewise",
-    number: "05",
-    title: "Finewise",
-    shortName: "finewise",
-    dateLabel: "AI · Finance · Copilot",
-    summary:
-      "AI-powered financial copilot interface — insights and money decisions in a clear product shell.",
-    overview:
-      "A finance + AI product UI that keeps recommendations understandable while supporting confident decisions.",
-    challenge:
-      "Presenting AI-assisted finance insights without making the experience feel opaque or risky.",
-    highlights: [
-      "AI insight presentation patterns",
-      "Finance dashboard UI",
-      "Trust and clarity in recommendations",
-      "Responsive product layout",
-    ],
-    stack: ["UI/UX", "AI", "Fintech"],
+    stack: ["Python", "Panda3D", "3D", "Desktop"],
     accent: "#fbbf24",
     image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    slug: "feedloop",
-    number: "06",
-    title: "FeedLoop",
-    shortName: "feedloop",
-    dateLabel: "Reviews · Trust · SaaS",
-    summary:
-      "Authentic review and trust-building product UI for feedback loops that feel real and usable.",
-    overview:
-      "A SaaS-oriented review experience designed to help teams collect, present, and act on authentic feedback.",
-    challenge:
-      "Making review systems feel trustworthy and useful for both customers and product teams.",
-    highlights: [
-      "Review collection flows",
-      "Trust-building UI patterns",
-      "SaaS dashboard modules",
-      "Clear content hierarchy",
-    ],
-    stack: ["UI/UX", "SaaS", "Web"],
-    accent: "#818cf8",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+    githubUrl: "https://github.com/vishal69224/3d-laptop",
   },
 ];
 

@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <PageShell
       title="PORTFOLIO"
-      description="Innovative and creative solutions from Artonest — SaaS, fintech, logistics, healthcare, and product design."
+      description="Live product work — Seller Hub, Video AI, AI Builder, and 3D Laptop — with demos and GitHub source."
     >
       <Reveal>
         <div className="mb-10 flex flex-wrap gap-6 text-mono text-[10px] text-[var(--dim)]">
